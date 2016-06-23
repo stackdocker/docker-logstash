@@ -20,4 +20,6 @@ VOLUME ["/logstash/config"]
 # Optional certificates folder
 VOLUME ["/logstash/certs"]
 
+EXPOSE 4560 
+
 CMD ["/logstash/bin/logstash", "--quiet",  "-f", "/logstash/config/logstash.conf"]
